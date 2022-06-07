@@ -1,0 +1,93 @@
+html {
+	font-size: 14px;
+	font-family: 'Roboto Mono', monospace;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.gridContainer{
+	max-width:1900px;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.twelveColGrid{
+}
+
+.twelveColGrid .gridItem{
+	width: calc((100% - 20px * 12) /12);
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.twelveColGrid:afer{
+	display: table;
+	clear: both;
+	content: ' ';	
+}
+
+.fixedGutterGrid{
+	z-index: 0;
+}
+
+.columnTwelve{
+	width: calc((100% - 20px * 12) /12);
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	height:100vh;
+	background: rgba(0,0,255,0.25);
+}
+
+.columnThree{
+	text-align: center;
+	width: calc((100% - 20px * 3) /3);
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+	height:9vh;
+	background: rgba(0,255,0,0.5);
+}
+
+.topBarBackground{
+	width: 100%;
+	position:fixed;
+	top:0;
+	left:0;
+	padding-left:8px;
+	padding-right:8px;
+	height: 10vh;
+	background: rgba(255,0,0,0.5);
+	z-index: 1;
+	display:flex;
+}
+	
+.logo{
+	text-align: center;
+	width: calc((100% - 20px * 3)/3);
+	line-height: -50%;
+	height: 9vh;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:8px;
+	background: rgba(0,255,0,1);
+	display:flex;
+	align-items: center;
+	justify-content: left;
+	color: #DEDCDE;
+	font-size: 46px;
+	font-weight: bold;
+}
+	
+.logo:after{
+	display: table;
+	clear: both;
+	content: ' ';
+}
+
